@@ -28,12 +28,9 @@ var (
 
 func init() {
 	owmApiKey = strings.TrimSpace(os.Getenv("OPEN_WEATHER_MAP_API_KEY"))
-	wuApiKey = strings.TrimSpace(os.Getenv("WEATHER_UNDERGROUND_API_KEY"))
+
 	if owmApiKey == "" {
 		log.Fatal("Missing API key for OpenWeatherMap")
-	}
-	if wuApiKey == "" {
-		log.Fatal("Missing API key for Weather Underground")
 	}
 }
 
